@@ -17,40 +17,127 @@
     <header>
         <nav class="navbar navbar-expand-lg bg-dark">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#"><img class="logo" src="./img/duck.png" alt=""></a>
-              <button class="navbar-toggler border-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span><i class="fa-solid fa-bars text-secondary"></i></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active text-light" aria-current="page" href="#">Catalogo Libri</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-secondary" href="#">Anagrafica Utenti</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle text-secondary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Storico Prestiti
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled text-secondary">Help</a>
-                  </li>
-                </ul>
-                <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Cerca..." aria-label="Search">
-                  <button class="btn btn-outline-light" type="submit">Cerca</button>
-                </form>
-              </div>
+                <a class="navbar-brand" href="#"><img class="logo" src="./img/duck.png" alt=""></a>
+                <button class="navbar-toggler border-secondary" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span><i class="fa-solid fa-bars text-secondary"></i></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active text-light" aria-current="page" href="#">Catalogo Libri</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-secondary" href="#">Anagrafica Utenti</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-secondary" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Storico Prestiti
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled text-secondary">Help</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Cerca..." aria-label="Search">
+                        <button class="btn btn-outline-light" type="submit">Cerca</button>
+                    </form>
+                </div>
             </div>
-          </nav>
+        </nav>
     </header>
     <main>
         <div class="container">
-            <div class="row">
-                <div class="col-12">
+            <div class="row pt-4">
+                <div class="col-12 d-flex justify-content-between">
                     <h3>Catalogo libri</h3>
+                    <button type="button" class="btn btn-primary">Aggiungi Libro</button>
+                </div>
+            </div>
+            <div class="row pt-4">
+                <div class="col-12">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th scope="col">Titolo</th>
+                                <th scope="col">Data presito</th>
+                                <th scope="col">Stato</th>
+                                <th scope="col">Azioni</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>I pilastri della terra</td>
+                                <td><i class="fa-solid fa-minus"></i></td>
+                                <td><span class="badge text-bg-success">Disponibile</span></td>
+                                <td><i class="fa-solid fa-pen"></i><i class="fa-solid fa-trash"></i></td>
+                            </tr>
+                            <tr>
+                                <td>I promessi sposi</td>
+                                <td><i class="fa-solid fa-minus"></i></td>
+                                <td><span class="badge text-bg-success">Disponibile</span></td>
+                                <td><i class="fa-solid fa-pen"></i><i class="fa-solid fa-trash"></i></td>
+                            </tr>
+                            <tr>
+                                <td>Il signore degli anelli</td>
+                                <td>18/10/2023</td>
+                                <td><span class="badge text-bg-warning">In prestito</span></td>
+                                <td><td><i class="fa-solid fa-pen"></i><i class="fa-solid fa-trash"></i></td></td>
+                            </tr>
+                            <tr>
+                                <td>Harry Potter e la pietra filosofale</td>
+                                <td><i class="fa-solid fa-minus"></i></td>
+                                <td><span class="badge text-bg-success">Disponibile</span></td>
+                                <td><td><i class="fa-solid fa-pen"></i><i class="fa-solid fa-trash"></i></td></td>
+                            </tr>
+                            <tr>
+                                <td>Il codice Da Vinci</td>
+                                <td><i class="fa-solid fa-minus"></i></td>
+                                <td><span class="badge text-bg-danger">Non disponibile</span></td>
+                                <td><td><i class="fa-solid fa-pen"></i><i class="fa-solid fa-trash"></i></td></td>
+                            </tr>
+                            <tr>
+                                <td>Shining</td>
+                                <td><i class="fa-solid fa-minus"></i></td>
+                                <td><span class="badge text-bg-success">Disponibile</span></td>
+                                <td><td><i class="fa-solid fa-pen"></i><i class="fa-solid fa-trash"></i></td></td>
+                            </tr>
+                            <tr>
+                                <td>La divina commedia</td>
+                                <td>21/09/2023</td>
+                                <td><span class="badge text-bg-warning">In prestito</span></td>
+                                <td><td><i class="fa-solid fa-pen"></i><i class="fa-solid fa-trash"></i></td></td>
+                            </tr>
+                            <tr>
+                                <td>Il trono di spade</td>
+                                <td><span class="badge text-bg-success">Disponibile</span></td>
+                                <td><td><i class="fa-solid fa-pen"></i><i class="fa-solid fa-trash"></i></td></td>
+                            </tr>
+                            <tr>
+                                <td>Il mondo di Sofia</td>
+                                <td><span class="badge text-bg-danger">Non disponibile</span></td>
+                                <td><td><i class="fa-solid fa-pen"></i><i class="fa-solid fa-trash"></i></td></td>
+                            </tr>
+                            <tr>
+                                <td>Le cronache di Narnia: il leone, la strega e l'armadio</td>
+                                <td><span class="badge text-bg-warning">In prestito</span></td>
+                                <td><td><i class="fa-solid fa-pen"></i><i class="fa-solid fa-trash"></i></td></td>
+                            </tr>
+                            <tr>
+                                <td>Il piccolo principe</td>
+                                <td><span class="badge text-bg-success">Disponibile</span></td>
+                                <td><td><i class="fa-solid fa-pen"></i><i class="fa-solid fa-trash"></i></td></td>
+                            </tr>
+                            <tr>
+                                <td>La storia infinita</td>
+                                <td><span class="badge text-bg-success">Disponibile</span></td>
+                                <td><td><i class="fa-solid fa-pen"></i><i class="fa-solid fa-trash"></i></td></td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
